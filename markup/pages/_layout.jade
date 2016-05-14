@@ -1,0 +1,27 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../modules/head/head
+  include ../modules/footer/footer
+
+  head
+    +head(head.defaults)
+  body.page
+    .main
+      block header
+        //- +header
+      block top-menu
+        //- +top-menu
+      block content
+        h1 hello
+    block footer
+      +footer
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
+    script.
+      $(document).ready(function() {
+        $(document).foundation();
+      });
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+      script svg4everybody();

@@ -1,2 +1,30 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+
+// foundation settings
+@import "_settings.scss";
+
+// foundation styles
+@include foundation-everything($flex: true);
+
+
+.row {
+  &.full {
+    width: 100%;
+    max-width: initial;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &.noGutter {
+    .columns {
+      padding: 0;
+    }
+  }
+}
+
+// columns modifiers
+.columns {
+  &.noGutter {
+    padding: 0;
+  }
+}

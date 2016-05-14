@@ -24,7 +24,11 @@ module.exports = {
         "webpack": {
             "useHMR": false
         },
-        "jsPathsToConcatBeforeModulesJs": [],
+        "jsPathsToConcatBeforeModulesJs": [
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/motion-ui/motion-ui.js',
+            'node_modules/foundation-sites/dist/foundation.js'
+        ],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],
         "lintJsCodeAfterModules": false

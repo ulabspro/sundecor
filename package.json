@@ -5,7 +5,10 @@
   "main": "gulpfile.js",
   "directories": {},
   "dependencies": {
-    "gulp": "^3.9.1"
+    "font-awesome": "^4.6.1",
+    "foundation-sites": "^6.2.1",
+    "gulp": "^3.9.1",
+    "jquery": "^2.2.3"
   },
   "devDependencies": {},
   "scripts": {
