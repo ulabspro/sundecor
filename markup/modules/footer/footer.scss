@@ -1,0 +1,15 @@
+.footer {
+  padding: 1rem 0;
+  .logo {
+    margin: auto;
+  }
+}
+
+.made {
+  a {
+    color: $coral;
+    &:hover {
+      color: $coral + #111;
+    }
+  }
+}

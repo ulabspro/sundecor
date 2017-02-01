@@ -1,0 +1,36 @@
+.top-menu {
+  display: flex;
+
+  text-transform: uppercase;
+
+  font-family: $TriviaSlabRegular;
+  font-size: rem-calc(26);
+
+  justify-content: space-between;
+  align-items: center;
+  @include breakpoint(medium) {
+    font-size: rem-calc(16);
+  }
+  &__item {
+    display: inline-block;
+    display: block;
+
+    margin-right: 30px;
+    margin-left: 30px;
+
+    color: $black;
+    &:hover {
+      color: $black;
+      border-bottom: 1px solid rgba($black, .4);
+    }
+    &--accent {
+      color: $coral;
+
+      font-family: $TriviaSlabRegular-Bold;
+      &:hover {
+        color: $coral;
+        border-bottom: 1px solid rgba($coral, .4);
+      }
+    }
+  }
+}

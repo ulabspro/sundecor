@@ -1,0 +1,66 @@
+mixin gallery(page, reverse)
+  - if (reverse == true) {
+  - var firstReverse = 2;
+  - var secondReverse = 1;
+  - }
+  - else {
+  - var firstReverse = 1;
+  - var secondReverse = 2;
+  - }
+  .gallery
+    - if (page != 'inside')
+      +title('Галерея наших работ', 'Не верьте на слово, лучше посмотрите что мы уже сделали!')
+
+    .row
+      .columns.small-12.medium-6(class="medium-order-#{firstReverse}")
+        .gallery-item.gallery-item--big
+          .gallery-item-overlay
+            .gallery-item-overlay__wrapper
+              .gallery-item-overlay__content
+                .gallery-item-overlay__title Рулонные шторы для детского сада «Мишутка»
+                a(href="#" title="").button.button--lined Просмотреть
+
+          .gallery-item__img
+            img(src="http://placehold.it/900x900&text=image")
+      .columns.small-12.medium-6(class="medium-order-#{secondReverse}")
+        .row
+          .columns.small-12.medium-6
+            .gallery-item.gallery-item--small
+              .gallery-item-overlay
+                .gallery-item-overlay__wrapper
+                  .gallery-item-overlay__content
+                    .gallery-item-overlay__title Рулонные шторы для детского сада «Мишутка»
+                    a(href="#" title="").button.tiny.button--lined Просмотреть
+              .gallery-item__img
+                img(src="http://placehold.it/600x600&text=image")
+          
+          .columns.small-12.medium-6
+            .gallery-item.gallery-item--small
+              .gallery-item-overlay
+                .gallery-item-overlay__wrapper
+                  .gallery-item-overlay__content
+                    .gallery-item-overlay__title Рулонные шторы для детского сада «Мишутка»
+                    a(href="#" title="").button.tiny.button--lined Просмотреть
+              .gallery-item__img
+                img(src="http://placehold.it/600x600&text=image")
+
+        .row
+          .columns.small-12.medium-6
+            .gallery-item.gallery-item--small
+              .gallery-item-overlay
+                .gallery-item-overlay__wrapper
+                  .gallery-item-overlay__content
+                    .gallery-item-overlay__title Рулонные шторы для детского сада «Мишутка»
+                    a(href="#" title="").button.tiny.button--lined Просмотреть
+              .gallery-item__img
+                img(src="http://placehold.it/600x600&text=image")
+          
+          .columns.small-12.medium-6
+            .gallery-item.gallery-item--small
+              .gallery-item-overlay
+                .gallery-item-overlay__wrapper
+                  .gallery-item-overlay__content
+                    .gallery-item-overlay__title Рулонные шторы для детского сада «Мишутка»
+                    a(href="#" title="").button.tiny.button--lined Просмотреть
+              .gallery-item__img
+                img(src="http://placehold.it/600x600&text=image")

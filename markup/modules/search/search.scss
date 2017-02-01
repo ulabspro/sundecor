@@ -1,0 +1,14 @@
+.search-icon {
+  transition: all .4s easy-in-out;
+
+  color: $black;
+
+  font-size: rem-calc(48);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(36);
+  }
+  &:hover {
+    color: $black;
+  }
+}

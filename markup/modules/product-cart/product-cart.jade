@@ -1,0 +1,53 @@
+mixin product-cart
+  .product-cart
+    .row
+      .columns.small-12.medium-4
+        .product-cart-image
+          img(src="http://placehold.it/600x600&text=image")
+          .product-cart-image__sale Скидка 25%
+      
+      .columns.small-12.medium-8
+        .product-cart-info
+          h1 Рулонные шторы Sundecor
+
+          .row.align-middle
+            .columns.shrink
+              .product-cart-info-cost
+                .product-cart-info-cost__last 154 000 сум
+                .product-cart-info-cost__new 90 000 сум за 1м
+                  sup 2
+            .columns.shrink
+              .product-cart-info-action
+                a(href="#" title="" data-open="checkoutModal").button Заказать
+            .columns
+              .product-cart-info-delivery Бесплатная доставка
+
+        .product-cart-meta
+          .row
+            .columns.shrink
+              .product-cart-meta-sizes
+                .row.align-middle
+                  .columns.shrink
+                    label.product-cart-meta-sizes__label Ширина (см):
+                  .columns
+                    input(type="text" value="100").product-cart-meta-sizes__input.productCartMetaSizesWidth
+                .row.align-middle
+                  .columns.shrink
+                    label.product-cart-meta-sizes__label Высота (см):
+                  .columns
+                    input(type="text" value="100").product-cart-meta-sizes__input.productCartMetaSizesHeight
+                .row
+                  .columns
+                    .product-cart-meta-sizes__total Общая площадь: 
+                      span 1м
+                      sup 2
+
+            .columns
+              .product-cart-meta-equipment
+                .product-cart-meta-equipment__check
+                  +checkbox('equipment', 'Электропривод').checkbox--equipment.checkboxElectricDrive
+                .product-cart-meta-equipment__check
+                  +checkbox('equipment', 'Установка').checkbox--equipment.checkboxSetting
+                .product-cart-meta-equipment__total После заказа с Вами свяжется менеджер и уточнит детали
+
+        +checkout

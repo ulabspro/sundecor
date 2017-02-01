@@ -1,0 +1,23 @@
+mixin top-baner(title, text, page)
+  - var modiffer = attributes.class || '';
+  .top-baner(class="#{modiffer}")
+    .top-baner__content
+      .top-baner__title #{title}
+      .top-baner__text #{text}
+
+      - if (page == 'main')
+        a(href="#" title="").button.top-baner__btn Перейти в каталог
+
+        .top-baner__text.top-baner__text--phone-title или получите консультацию по телефонам: 
+
+    .top-baner-slide
+      .top-baner-slide-item.top-baner-slide-item-1
+      .top-baner-slide-item.top-baner-slide-item-2
+      .top-baner-slide-item.top-baner-slide-item-3
+      .top-baner-slide-item.top-baner-slide-item-4
+
+  .top-baner-contact
+    i.icon.icon-phone
+
+    .top-baner-contact__phone +998 (90) 999 99 99
+    .top-baner-contact__phone +998 (90) 999 99 99

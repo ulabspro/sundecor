@@ -1,0 +1,20 @@
+.basket-total {
+  margin-top: 40px;
+
+  font-size: rem-calc(60);
+  line-height: 1;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(52);
+  }
+  &__title {
+    color: #c7c7c7;
+
+    font-family: $TriviaSlabRegular;
+  }
+  &__value {
+    color: $coral;
+
+    font-family: $TriviaSlabRegular-Bold;
+  }
+}

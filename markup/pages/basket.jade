@@ -1,0 +1,18 @@
+extends ./_layout.jade
+
+block content
+  .row
+    .columns
+      .page.page--product
+        .row
+          .columns
+            +breadcrumbs
+        .row
+          .columns
+            +basket-item
+            +basket-item
+        .row
+          .columns
+            +basket-total
+
+  //- +basket-checkout

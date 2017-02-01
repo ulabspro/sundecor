@@ -1,0 +1,17 @@
+.sort {
+  &__text {
+    font-size: rem-calc(22);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(14);
+    }
+  }
+  select {
+    margin-bottom: 0;
+
+    font-size: rem-calc(14);
+    &:focus {
+      outline: none;
+    }
+  }
+}

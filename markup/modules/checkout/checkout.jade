@@ -1,0 +1,28 @@
+mixin checkout
+  .checkout(class="reveal" id="checkoutModal" data-reveal)
+    .checkout__content
+      .checkout__title Оформить заказ
+      .checkout__text заполните форму и наш менеджер свяжется с Вами
+
+      form.checkout-form(method="post" action="" id="sendRequest")
+        input(type="hidden" value="[*pagetitle*]" name="productName")
+        input(type="hidden" value="1" name="productArea").productAreaForm
+        input(type="hidden" value="Нет" name="productElectric").productElectricForm
+        input(type="hidden" value="Нет" name="productInstall").productInstallForm
+        .checkout-form__item
+          i.fa.fa-user
+          input(type="text" value="" placeholder="Ваше имя" name="name").checkout-form__field
+
+        .checkout-form__item
+          i.fa.fa-phone
+          input(type="text" value="" placeholder="Ваш телефон" name="phone").checkout-form__field
+
+        .checkout-form__item
+          i.fa.fa-map-marker
+          textarea(placeholder="Ваш адрес с ориентирами" rows="3" name="address").checkout-form__field.checkout-form__field--textarea
+
+        .checkout-form__item
+          input(type="submit" value="Оформить заказ").button.checkout-form__submit
+
+        .checkout-form__item
+          a(href="javascript:void(0)" title="" data-close aria-label="Закрыть").checkout__close Закрыть

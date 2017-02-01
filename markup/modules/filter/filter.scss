@@ -1,0 +1,73 @@
+.filter {
+	margin-top: 30px;
+	padding: 30px;
+
+	background-color: #f8f8f8;
+}
+
+.filter-block {
+	padding-bottom: 20px;
+	&__title {
+		margin-bottom: 15px;
+
+		color: $black;
+
+		font-family: $NeoSansPro-Medium;
+		font-size: rem-calc(22);
+
+		@include breakpoint(medium) {
+			font-size: rem-calc(14);
+		}
+	}
+}
+
+.slider-handle {
+	width: 10px;
+	height: 10px;
+
+	background-color: #949392;
+	&:hover {
+		background-color: $black;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+.slider-handle-fixed {
+	position: absolute;
+
+	width: 5px;
+	height: 5px;
+
+	background-color: transparent;
+
+	@include vertical-center;
+	&--left {
+		left: 0;
+	}
+	&--right {
+		right: 0;
+	}
+}
+
+.slider-fill {
+	height: .3rem;
+
+	background-color: #ebebeb;
+}
+
+.slider-output {
+	padding-top: 10px;
+
+	font-size: rem-calc(10);
+	&__item {
+		height: auto;
+		margin: 0;
+
+		border-color: transparent;
+		box-shadow: none;
+
+		font-size: rem-calc(10);
+	}
+}

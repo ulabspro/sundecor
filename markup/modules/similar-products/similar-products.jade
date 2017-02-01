@@ -1,0 +1,8 @@
+mixin similar-products
+  .similar-products
+    .similar-products__title Похожие товары
+
+    .row
+      - for (var i = 0; i < 4; i++)
+        .columns
+          +product-block

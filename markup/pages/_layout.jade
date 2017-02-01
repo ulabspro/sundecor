@@ -4,18 +4,39 @@ html(class="no-js", lang="ru")
   include ../modules/head/head
   include ../modules/footer/footer
 
+  include ../modules/logo/logo
+  include ../modules/top-menu/top-menu
+  include ../modules/search/search
+  include ../modules/top-bar/top-bar
+  include ../modules/top-baner/top-baner
+  include ../modules/title/title
+  include ../modules/triple/triple
+  include ../modules/gallery/gallery
+  include ../modules/last-product/last-product
+  include ../modules/reviews/reviews
+  include ../modules/bottom-baner/bottom-baner
+  include ../modules/breadcrumbs/breadcrumbs
+  include ../modules/sort/sort
+  include ../modules/filter/filter
+  include ../modules/checkbox/checkbox
+  include ../modules/product-block/product-block
+  include ../modules/product-cart/product-cart
+  include ../modules/similar-products/similar-products
+  include ../modules/basket-item/basket-item
+  include ../modules/basket-total/basket-total
+  include ../modules/checkout/checkout
+  include ../modules/map/map
+
   head
     +head(head.defaults)
-  body.page
+  body
     .main
-      block header
-        //- +header
-      block top-menu
-        //- +top-menu
+      block topbar
+        +top-bar
       block content
         h1 hello
-    block footer
-      +footer
+      block footer
+        +footer
 
     //- Main scripts. You can replace it, but I recommend you to leave it here
     script(src='%=static=%js/main%=hash=%%=min=%.js')
@@ -23,5 +44,5 @@ html(class="no-js", lang="ru")
       $(document).ready(function() {
         $(document).foundation();
       });
-    script(src='%=static=%js/separate-js/svg4everybody.min.js')
-      script svg4everybody();
+    //- script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    //-   script svg4everybody();

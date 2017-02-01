@@ -1,0 +1,19 @@
+extends ./_layout.jade
+
+block content
+  +top-baner('Каталог продукции', 'Наши товары отличаются высоким качеством и современным дизайном. Здесь Вы найдете продукцию под свой вкус и интерьер').top-baner--catalog
+  .row
+    .columns.small-12.medium-9
+      .page
+        .row
+          .columns
+            +breadcrumbs
+          .columns
+            +sort
+        .catalog
+          - for (var i = 0; i < 9; i++)
+            +product-block
+    .columns.small-12.medium-3
+      +filter
+
+  +bottom-baner

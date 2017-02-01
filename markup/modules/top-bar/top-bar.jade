@@ -1,0 +1,10 @@
+mixin top-bar
+  - var modiffer = attributes.class || '';
+  .top-bar(class="#{modiffer}")
+    .row.align-middle
+      .columns.shrink
+        +logo.logo--white
+      .columns
+        +top-menu
+      .columns.shrink
+        +search

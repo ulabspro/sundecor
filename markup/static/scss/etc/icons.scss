@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "sundecor";
+  src:url("../fonts/sundecor.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/sundecor.woff") format("woff"),
+    url("../fonts/sundecor.ttf") format("truetype"),
+    url("../fonts/sundecor.svg#sundecor") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.icon:before {
+  content: attr(data-icon);
+  text-transform: none !important;
+
+  font-family: "sundecor" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  line-height: 1;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-right-open-big:before {
+  content: "\61";
+}
+.icon-left-open-big:before {
+  content: "\62";
+}
+.icon-phone:before {
+  content: "\63";
+}

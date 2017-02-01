@@ -1,0 +1,22 @@
+.breadcrumbs {
+  margin-bottom: 30px;
+  &__item {
+    a {
+      font-size: rem-calc(14);
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      display: inline-block;
+
+      margin-left: 10px;
+
+      content: "»";
+
+      font-size: rem-calc(14);
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.gallery-item {
+  position: relative;
+  &:hover {
+    cursor: pointer;
+    .gallery-item-overlay {
+      visibility: visible;
+
+      opacity: 1;
+    }
+  }
+  &--small {
+    margin-bottom: 30px;
+    .gallery-item-overlay {
+      &__title {
+        font-size: rem-calc(24);
+        line-height: rem-calc(29);
+
+        @include breakpoint(medium) {
+          font-size: rem-calc(14);
+          line-height: rem-calc(25);
+        }
+      }
+    }
+  }
+}
+
+.gallery-item-overlay {
+  position: absolute;
+
+  visibility: hidden;
+
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  transition: all .4s ease-in-out;
+
+  opacity: 0;
+  background: rgba($black, .7);
+  &__wrapper {
+    width: 95%;
+    height: 95%;
+
+    border: 2px solid rgba($white, .3);
+
+    @include absolute-center;
+  }
+  &__content {
+    width: 70%;
+
+    text-align: center;
+
+    @include absolute-center;
+  }
+  &__title {
+    margin-bottom: 20px;
+
+    color: $white;
+
+    font-family: $TriviaSlabRegular;
+    font-size: rem-calc(44);
+    line-height: rem-calc(58);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(36);
+      line-height: rem-calc(50);
+    }
+  }
+}

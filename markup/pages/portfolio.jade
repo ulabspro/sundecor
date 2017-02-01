@@ -1,0 +1,21 @@
+extends ./_layout.jade
+
+block content
+  +top-baner('галерея наших работ', 'Не верьте на слово, лучше посмотрите что мы уже сделали!').top-baner--portfolio
+  .row
+    .columns
+      .page
+        .row
+          .columns
+            +breadcrumbs
+        .row
+          .columns    
+            +gallery('inside')
+        .row
+          .columns    
+            +gallery('inside', true)
+        .row
+          .columns    
+            +gallery('inside')
+
+  +bottom-baner

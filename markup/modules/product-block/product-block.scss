@@ -1,0 +1,44 @@
+.product-block {
+  box-sizing: border-box;
+  max-width: 270px;
+  margin-top: 20px;
+  padding: 10px;
+
+  transition: all .4s ease-in-out;
+
+  border-radius: 3px;
+  background-color: $white;
+  &:hover {
+    box-shadow: 0 0 10px #cdcdcd;
+  }
+  &__title {
+    padding: 15px;
+
+    color: #3b3b3b;
+
+    font-family: $TriviaSlabRegular-Bold;
+    font-size: rem-calc(23);
+    line-height: 1;
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(15);
+    }
+    &--sub {
+      font-size: rem-calc(23);
+      text-align: center;
+    }
+  }
+  &__cost {
+    padding-left: 15px;
+
+    color: $coral;
+
+    font-family: $NeoSansPro-Medium;
+    font-size: rem-calc(26);
+    line-height: 1;
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(18);
+    }
+  }
+}

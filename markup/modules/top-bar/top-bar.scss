@@ -1,0 +1,21 @@
+.top-bar {
+  z-index: 99;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba($black, .3);
+}
+
+.top-bar-basket {
+  transition: all .4s easy-in-out;
+
+  color: $black;
+
+  font-size: rem-calc(48);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(36);
+  }
+  &:hover {
+    color: $light-gray;
+  }
+}

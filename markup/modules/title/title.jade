@@ -1,0 +1,5 @@
+mixin title(title, text)
+  - var modiffer = attributes.class || '';
+  .title(class="#{modiffer}")
+    .title__top #{title}
+    .title__text #{text}

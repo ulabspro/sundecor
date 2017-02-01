@@ -17,5 +17,17 @@
 $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 */
 
-// @include font-face(HelveticaNeueCyr-Bold, "../fonts/HelveticaNeueCyr-Bold");
-// $HelveticaNeueCyr-Bold: 'HelveticaNeueCyr-Bold', Helvetica, Arial, sans-serif;
+@include font-face(NeoSansPro-Regular, "../fonts/NeoSansPro-Regular");
+$NeoSansPro-Regular: 'NeoSansPro-Regular', Helvetica, Arial, sans-serif;
+
+@include font-face(NeoSansPro-Medium, "../fonts/NeoSansPro-Medium");
+$NeoSansPro-Medium: 'NeoSansPro-Medium', Helvetica, Arial, sans-serif;
+
+@include font-face(TriviaSlabRegular, "../fonts/TriviaSlabRegular");
+$TriviaSlabRegular: 'TriviaSlabRegular', Helvetica, Arial, sans-serif;
+
+@include font-face(TriviaSlabRegular-Bold, "../fonts/TriviaSlabRegular-Bold");
+$TriviaSlabRegular-Bold: 'TriviaSlabRegular-Bold', Helvetica, Arial, sans-serif;
+
+@include font-face(sundecor, "../sundecor");
+$sundecor: 'sundecor', Helvetica, Arial, sans-serif;

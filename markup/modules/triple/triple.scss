@@ -1,0 +1,28 @@
+.triple-block {
+  margin-bottom: 40px;
+  &__title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    color: $coral;
+
+    font-family: $TriviaSlabRegular-Bold;
+    font-size: rem-calc(40);
+    line-height: 1;
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(32);
+    }
+  }
+  &__text {
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+    font-size: rem-calc(29);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(21);
+    }
+  }
+}

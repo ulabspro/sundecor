@@ -1,0 +1,67 @@
+mixin filter(page)
+  .filter
+    form(method="GET" action="")
+      .filter-block
+          .filter-block__title Категория
+          .row.full.noGutter
+            .columns
+              +checkbox('catalog[]','STANDART','STANDART')
+              +checkbox('catalog[]','BASIC', 'BASIC')
+              +checkbox('catalog[]','ELEGANT', 'ELEGANT')
+            .columns
+              +checkbox('catalog[]','EURO', 'EURO')
+              +checkbox('catalog[]','DIAMOND', 'DIAMOND')
+              +checkbox('catalog[]','EXCLUSIVE', 'EXCLUSIVE')
+      .filter-block
+          .filter-block__title Цвет
+
+          .row.full.noGutter
+            .columns
+              +checkbox('color[]','бордовый', 'бордовый')
+              +checkbox('color[]','золота', 'золота')
+              +checkbox('color[]','черный', 'черный')
+              +checkbox('color[]','желтый', 'желтый')
+              +checkbox('color[]','синий', 'синий')
+              +checkbox('color[]','фиолетовый', 'фиолетовый')
+              +checkbox('color[]','серый', 'серый')
+              +checkbox('color[]','белый', 'белый')
+              +checkbox('color[]','бежевый', 'бежевый')
+            .columns
+              +checkbox('color[]','молочный', 'молочный')
+              +checkbox('color[]','зеленый', 'зеленый')
+              +checkbox('color[]','оранжевый', 'оранжевый')
+              +checkbox('color[]','коричневый', 'коричневый')
+              +checkbox('color[]','голубой', 'голубой')
+              +checkbox('color[]','розовый', 'розовый')
+              +checkbox('color[]','узорный', 'узорный')
+              +checkbox('color[]','темно-синий', 'темно-синий')
+              +checkbox('color[]','красный', 'красный')
+
+      .filter-block
+          .filter-block__title Затемнение
+
+          .row.full.noGutter
+            .columns
+              +checkbox('blackout[]','95%','95%')
+              +checkbox('blackout[]','50%','50%')
+              +checkbox('blackout[]','20-30%','20-30%')
+
+      //- .filter-block
+      //-   .filter-block__title Цена
+      //-   .slider(data-slider data-initial-end="200000" data-end="200000" data-start="0")
+      //-     span.slider-handle(data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1")
+      //-     span.slider-fill(data-slider-fill)
+      //-     span.slider-handle(data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput2")
+      //-     span.slider-handle-fixed.slider-handle-fixed--left
+      //-     span.slider-handle-fixed.slider-handle-fixed--right
+      //-     .slider-output
+      //-       .row.full.noGutter.align-middle
+      //-         .columns
+      //-           input(type="text" disabled).slider-output__item.text-right#sliderOutput1
+      //-         .columns.shrink
+      //-           .slider-output__line -
+      //-         .columns
+      //-           input(type="text" disabled).slider-output__item#sliderOutput2
+
+      .filter-block.text-center
+        input(type="submit" value="Фильтровать").button.small

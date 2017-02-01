@@ -1,0 +1,144 @@
+.top-baner {
+  position: relative;
+
+  box-sizing: border-box;
+  max-width: 100rem;
+  height: 500px;
+  margin: auto;
+  padding-top: 140px;
+
+  text-align: center;
+
+  color: $coral;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &--main {
+    padding-top: 90px;
+    .top-baner__text {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 2;
+
+    width: 40%;
+    margin-left: 80px;
+  }
+  &__title {
+    padding-bottom: 5px;
+
+    text-transform: uppercase;
+
+    font-family: $TriviaSlabRegular-Bold;
+    font-size: rem-calc(55);
+    line-height: 1;
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(42);
+    }
+  }
+  &__text {
+    margin: 10px auto 0;
+
+    color: #000;
+
+    font-size: rem-calc(33);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(22);
+    }
+    &:after {
+      position: relative;
+
+      display: block;
+
+      width: 30%;
+      height: 3px;
+      margin: 35px auto 0;
+
+      content: "";
+
+      background-color: $black;
+    }
+  }
+  &__btn {
+    margin: 40px 0;
+  }
+  &__phone {
+    margin-top: 10px;
+
+    color: $coral;
+
+    font-family: $TriviaSlabRegular-Bold;
+    font-size: rem-calc(60);
+    line-height: 1;
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(48);
+    }
+    span {
+      display: block;
+    }
+  }
+}
+
+.top-baner-slide {
+  position: absolute;
+  top: 0;
+
+  overflow: hidden;
+
+  width: 100%;
+  .slick-nav {
+    color: $black;
+
+    font-size: rem-calc(55);
+    &--prev {
+      left: 15px;
+    }
+    &--next {
+      right: 15px;
+    }
+  }
+}
+
+.top-baner-slide-item {
+  height: 500px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &.top-baner-slide-item-1 {
+    background-image: url(%=static=%content/bg-1.jpg);
+  }
+  &.top-baner-slide-item-2 {
+    background-image: url(%=static=%content/bg-2.jpg);
+  }
+  &.top-baner-slide-item-3 {
+    background-image: url(%=static=%content/bg-3.jpg);
+  }
+  &.top-baner-slide-item-4 {
+    background-image: url(%=static=%content/bg-4.jpg);
+  }
+}
+
+.top-baner-contact {
+  padding: 40px 0;
+
+  text-align: center;
+
+  color: $white;
+  background: $coral;
+  .icon {
+    font-size: rem-calc(50);
+  }
+  &__phone {
+    font-family: $TriviaSlabRegular-Bold;
+    font-size: rem-calc(60);
+    line-height: 1;
+  }
+}

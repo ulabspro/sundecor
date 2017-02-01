@@ -1,0 +1,22 @@
+extends ./_layout.jade
+
+block content
+  +top-baner('что о нас говорят', 'Отзывы наших клиентов говорят сами за себя: «Мы профессионалы своего дела!»').top-baner--reviews
+  .row
+    .columns
+      .page
+        .row
+          .columns
+            +breadcrumbs
+        .row
+          .columns    
+            +reviews-item('inside', 'align-start')
+          .columns
+            +reviews-item('inside', 'align-start')
+        .row
+          .columns    
+            +reviews-item('inside', 'align-start')
+          .columns
+            +reviews-item('inside', 'align-start')
+
+  +bottom-baner

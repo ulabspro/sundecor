@@ -27,7 +27,8 @@ module.exports = {
         "jsPathsToConcatBeforeModulesJs": [
             'node_modules/jquery/dist/jquery.js',
             'node_modules/motion-ui/motion-ui.js',
-            'node_modules/foundation-sites/dist/foundation.js'
+            'node_modules/foundation-sites/dist/foundation.js',
+            'node_modules/slick-carousel/slick/slick.js'
         ],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],

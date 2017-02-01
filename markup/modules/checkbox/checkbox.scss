@@ -1,0 +1,57 @@
+.checkbox {
+  position: relative;
+  input {
+    margin-bottom: 0;
+    &:focus {
+      outline: none;
+    }
+  }
+  label {
+    color: #969696;
+
+    font-size: rem-calc(19);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(14);
+    }
+  }
+  i {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    box-sizing: border-box;
+
+    font-size: rem-calc(19);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(14);
+    }
+  }
+  &.active {
+    label {
+      color: $black;
+    }
+    i {
+      @extend .fa;
+      @extend .fa-check-square-o;
+    }
+  }
+  &--equipment {
+    label,
+    i {
+      font-size: rem-calc(30);
+
+      @include breakpoint(medium) {
+        font-size: rem-calc(22);
+      }
+    }
+    label {
+      padding-left: 10px;
+    }
+    i {
+      top: 7px;
+    }
+  }
+}

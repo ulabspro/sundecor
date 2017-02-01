@@ -1,0 +1,5 @@
+.logo {
+  @include bg-svg($logo);
+  display: block;
+  text-indent: -9999px;
+}

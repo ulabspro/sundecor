@@ -1,0 +1,7 @@
+mixin checkbox(name, value, view)
+  - var modiffer = attributes.class || '';
+  .checkbox(class="#{modiffer}")
+    label
+      i.fa.fa-square-o
+      input(type="checkbox" name="#{name}" value="#{value}")
+      span #{view}

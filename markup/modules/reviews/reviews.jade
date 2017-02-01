@@ -1,0 +1,30 @@
+mixin reviews
+  .reviews
+    +title('Что о нас говорят', 'Отзывы от наших клиентов')
+
+    .reviews-slider
+      - for (var i = 0; i < 4; i++)
+        +reviews-item(undefined, 'align-middle')
+
+    .reviews__all
+      .row
+        .columns.text-center
+          a(href="#" title="").button.small.button--lined.button--black Все отзывы
+
+mixin reviews-item(page, align)
+  .reviews-item
+    .row(class="#{align}")
+      .columns.shrink
+        .reviews-item__img
+          img(src="http://placehold.it/200x200&text=image")
+      .columns
+        .reviews-item__name Семья Саттаровых
+        - if (page != 'inside')
+          .reviews-item__text Безупречная работа. Приехали, бесплатно замерили, помогли с выбором жалюзей. Остались очень довольны!
+        - if (page == 'inside')
+          .reviews-item__text 
+            p Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат.
+            p В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
+            p Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.
+        - if (page != 'inside')
+          a(href="#" title="").reviews-item__link Читать полностью »

@@ -1,0 +1,62 @@
+.reviews {
+  padding-bottom: 80px;
+  &__all {
+    margin-top: -40px;
+  }
+}
+
+.reviews-slider {
+  margin-bottom: 60px;
+}
+
+.reviews-item {
+  margin-bottom: 40px;
+  &:focus {
+    outline: none;
+  }
+  &__img {
+    padding-left: 40px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    margin-bottom: 15px;
+
+    font-family: $TriviaSlabRegular-Bold;
+    font-size: rem-calc(27);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(19);
+    }
+  }
+  &__text {
+    padding-bottom: 15px;
+
+    font-size: rem-calc(19);
+    line-height: rem-calc(29);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(16);
+      line-height: rem-calc(21);
+    }
+  }
+  &__link {
+    margin-top: 10px;
+
+    color: #8a8a8a;
+    &:hover {
+      color: $coral;
+    }
+  }
+}
+
+.slick-nav {
+  z-index: 99;
+  color: $coral;
+
+  font-size: rem-calc(40);
+  &:hover {
+    color: scale-color($coral, $lightness: -5%);
+  }
+}

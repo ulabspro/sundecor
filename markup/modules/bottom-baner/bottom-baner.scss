@@ -1,0 +1,37 @@
+.bottom-baner {
+  position: relative;
+
+  height: 350px;
+
+  // background: url(%=static=%general/bg-call.jpg) no-repeat center;
+  // background-size: cover;
+  background-color: $coral;
+
+  font-family: $TriviaSlabRegular-Bold;
+  font-size: rem-calc(60);
+  line-height: 1;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(50);
+  }
+  &__content {
+    text-align: center;
+
+    @include absolute-center;
+  }
+  &__phone {
+    margin-top: 30px;
+
+    color: $white;
+    span {
+      display: block;
+    }
+  }
+}
+
+.bottom-baner-title {
+  color: $white;
+  &__big {
+    text-transform: uppercase;
+  }
+}

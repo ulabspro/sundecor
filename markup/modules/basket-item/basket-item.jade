@@ -1,0 +1,42 @@
+mixin basket-item
+  .basket-item
+    .row.align-middle.align-justify
+      .columns.small-12.medium-expand.shrink
+        img(src="http://placehold.it/145x145&text=image")
+      
+      .columns.small-12.medium-expand.shrink
+        a(href="#" title="").basket-item__link Рулонные шторы Sundecor
+        .basket-item-characteristics
+          .basket-item-characteristics__item
+            i.fa.fa-asterisk
+            span Общая площадь: 2м
+              sup 2
+          .basket-item-characteristics__item
+            i.fa.fa-check
+            span Установка
+          .basket-item-characteristics__item
+            i.fa.fa-check
+            span Электропривод
+      
+      .columns.small-12.medium-expand
+        .basket-item__title Количество
+
+        .basket-item-count.productCount
+          .row.full.noGutter.align-center.align-middle
+            .columns.shrink
+              .basket-item-count__control.productCountMinus
+                i.fa.fa-minus
+            .columns.shrink
+              input(type="text" value="1").basket-item-count__value.productCountValue
+            .columns.shrink
+              .basket-item-count__control.productCountPlus
+                i.fa.fa-plus
+
+      .columns.small-12.medium-expand
+        .basket-item__title Сумма
+
+        .basket-item-cost 770 000 сум
+
+      .columns.small-12.medium-expand.shrink
+        a(href="#" title="").basket-item-delete
+          i.fa.fa-times

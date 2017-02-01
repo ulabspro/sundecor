@@ -28,3 +28,42 @@
     padding: 0;
   }
 }
+
+.button {
+  border-radius: 3px;
+
+  font-family: $TriviaSlabRegular;
+  font-size: rem-calc(30);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(22);
+  }
+  &--lined {
+    border: 2px solid $white;
+    background: transparent;
+    &:hover {
+      color: $black;
+      background-color: $white;
+    }
+  }
+  &--black {
+    color: $black;
+    border-color: $black;
+    &:hover {
+      color: $white;
+      background-color: $black;
+    }
+  }
+}
+
+.page {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.catalog {
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
